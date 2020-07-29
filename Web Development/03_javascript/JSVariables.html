@@ -1,0 +1,37 @@
+<html>
+    
+    <head>
+    
+        <title>Using Variables</title>
+        <h1>Changing text by clicking buttons</h1>
+    
+    
+    
+    </head>
+    
+    <body>
+        <input type="text" id="textIn">
+        <button id="textChange">Click here!</button>
+        
+        <p id="text">The text here should change when you click the "Click Here!" button.</p>
+    
+        <script type="text/javascript">
+        
+        document.getElementById("textChange").onclick =function(){
+            
+            var textEntered = "";
+            
+            textEntered = document.getElementById("textIn").value;
+            
+            document.getElementById("text").innerHTML =textEntered;
+            
+            
+        }
+        
+        
+        
+        </script>
+    
+    </body>
+
+</html>
