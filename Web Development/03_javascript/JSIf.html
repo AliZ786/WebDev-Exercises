@@ -1,0 +1,50 @@
+<html>
+    
+    <head>
+    
+        <title>Magic word</title>
+    
+    
+    
+    </head>
+    
+    <body>
+        <p>Can you guess the magic word?</p>
+        <input type="text" id="textIn">
+        <button id="textCheck">Enter your choice</button>
+        
+     
+    
+        <script type="text/javascript">
+            
+            
+        document.getElementById("textCheck").onclick = function(){
+            
+            var word = document.getElementById("textIn").value;
+            
+            var magicWord ="Leviosa";
+            
+            
+            if(word == magicWord){
+                
+                alert("You got the word!");
+                
+            }
+            
+            else{
+                
+                alert("Sorry, please try again!");
+            }
+            
+        }
+        
+            
+        
+        
+        
+        
+        </script>
+    
+    </body>
+
+</html>
